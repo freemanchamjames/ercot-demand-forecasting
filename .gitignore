@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+
+# DuckDB / local database files
+*.duckdb
+*.duckdb.wal
+
+# Local data folders
+data/raw/
+data/interim/
+
+# Large local exports
+*.csv
+*.parquet
