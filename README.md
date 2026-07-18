@@ -79,6 +79,12 @@ The workflow is best suited for short-term hourly demand forecasting because it 
 
 HistGradientBoosting was the strongest-performing model overall and across the specified demand-risk and weather-risk segments.
 
+On the 2025 test set, the final HistGradientBoosting model achieved:
+
+| Model | Test MAE | Test RMSE | MAE % of Mean Demand | RMSE % of Mean Demand |
+|---|---:|---:|---:|---:|
+| HistGradientBoosting | 469.58 | 625.16 | 0.84% | 1.12% |
+
 This supports the EDA finding that ERCOT demand is shaped by nonlinear relationships and interactions between lagged demand, calendar patterns, and weather conditions.
 
 ## Repository Structure
