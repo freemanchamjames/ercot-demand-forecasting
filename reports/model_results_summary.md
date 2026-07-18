@@ -28,11 +28,18 @@ Additional segment-level evaluation was performed for:
 - normal-weather hours
 - cold-weather hours
 
+## Test Set Results
+
+| Model | Test MAE | Test RMSE | MAE % of Mean Demand | RMSE % of Mean Demand |
+|---|---:|---:|---:|---:|
+| Ridge Regression | 1113.06 | 1405.77 | 2.00% | 2.52% |
+| Random Forest | 654.01 | 893.38 | 1.17% | 1.60% |
+| HistGradientBoosting (HGB) | 469.58 | 625.16 | 0.84% | 1.12% |
+
 ## Main Findings
 
-HGB was the best performing model overall as well as across the specified weather and demand segments. The finding supports the EDA finding that ERCOT demand is driven by non-linear
-relationships along with numerous interactions between features. MAE and RMSE results for the primary model were within 2% of the mean demand suggesting reasonable forecasting 
-accuracy for an hourly demand model forecasting.
+HGB was the best performing model overall as well as across the specified weather and demand segments. The finding supports the EDA finding that ERCOT demand is driven by non-linear relationships along with numerous interactions between features. On the 2025 test set, HGB achieved a Test MAE of 469.58 and a Test RMSE of 625.16. These errors represented approximately 0.84% and 1.12% of mean 2025 demand, respectively.
+
 
 ## Intended Use
 
