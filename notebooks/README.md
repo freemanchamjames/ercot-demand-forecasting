@@ -20,7 +20,7 @@ Run the notebooks in numerical order.
 
 ## 1. Demand Preparation and Demand-Only Modeling
 
-`01_ERCOT_demand_pull_and_demand_only_modeling.ipynb`
+`01_ERCOT_demand_pull_and_modeling.ipynb`
 
 - Loads the provided raw EIA dataset from `data/eia_erco_region_data_2019_2025_raw.csv`.
 - Cleans and validates ERCOT hourly demand data.
@@ -33,7 +33,7 @@ The notebook also retains the original EIA API extraction code for documentation
 
 ## 2. Weather Integration and Risk Analysis
 
-`02_ERCOT_weather_integration_and_risk_EDA.ipynb`
+`02_ERCOT_weather_pull_EDA.ipynb`
 
 - Loads `data/demand_hourly.csv`.
 - Retrieves hourly weather observations from Open-Meteo for six Texas cities.
