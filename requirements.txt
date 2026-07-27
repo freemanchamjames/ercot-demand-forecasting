@@ -1,8 +1,12 @@
+notebook
 pandas
 numpy
 matplotlib
 seaborn
-scikit-learn
-duckdb
 requests
-jupyter
+duckdb
+openmeteo-requests
+requests-cache
+retry-requests
+scikit-learn>=1.4
+xgboost
