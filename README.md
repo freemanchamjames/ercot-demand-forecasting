@@ -72,7 +72,7 @@ The notebooks form a sequential pipeline:
 
 ### 1. Demand Preparation and Demand-Only Modeling
 
-`01_ERCOT_demand_pull_and_demand_only_modeling.ipynb`
+`01_ERCOT_demand_pull_and_modeling.ipynb`
 
 - Loads the supplied raw EIA dataset.
 - Cleans and validates hourly demand.
@@ -83,7 +83,7 @@ The notebooks form a sequential pipeline:
 
 ### 2. Weather Integration and Risk EDA
 
-`02_ERCOT_weather_integration_and_risk_EDA.ipynb`
+`02_ERCOT_weather_pull_EDA.ipynb`
 
 - Loads the processed demand data.
 - Retrieves weather observations from Open-Meteo.
@@ -221,8 +221,8 @@ ercot-demand-forecasting/
 │
 ├── notebooks/
 │   ├── README.md
-│   ├── 01_ERCOT_demand_pull_and_demand_only_modeling.ipynb
-│   ├── 02_ERCOT_weather_integration_and_risk_EDA.ipynb
+│   ├── 01_ERCOT_demand_pull_and_modeling.ipynb
+│   ├── 02_ERCOT_weather_pull_EDA.ipynb
 │   └── 03_ERCOT_modeling.ipynb
 │
 ├── data/
