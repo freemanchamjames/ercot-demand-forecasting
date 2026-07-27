@@ -39,8 +39,6 @@ Additional segment-level evaluation was performed for:
 ## Main Findings
 
 HGB was the best performing model overall as well as across the specified weather and demand segments. The finding supports the EDA finding that ERCOT demand is driven by non-linear relationships along with numerous interactions between features. On the 2025 test set, HGB achieved a Test MAE of 469.58 and a Test RMSE of 625.16. These errors represented approximately 0.84% and 1.12% of mean 2025 demand, respectively.
-
-
 ## Intended Use
 
 This modeling workflow is best used for short-term hourly demand forecasting due to its reliance on recent lag and rolling demand features. In order for the model to perform
