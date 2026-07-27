@@ -1,31 +1,24 @@
-# Data Notes
+# Data
 
-This project uses public hourly electricity demand and weather data.
+This directory contains the demand datasets needed to run the notebook workflow.
 
-## Demand Data
+## Included Files
 
-- Source: U.S. Energy Information Administration Open Data API
-- Dataset: electricity/rto/region-data
-- Respondent: ERCO
-- Type: Demand
-- Frequency: hourly
-- Period used: 2019–2025
+### `eia_erco_region_data_2019_2025_raw.csv`
 
-## Weather Data
+Raw ERCOT regional data retrieved from the U.S. Energy Information Administration (EIA) API for 2019–2025.
 
-- Source: Open-Meteo Historical Weather API
-- Frequency: hourly
-- Timestamps aligned to UTC
-- Representative ERCOT/Texas locations:
-  - Houston
-  - Dallas
-  - Austin
-  - San Antonio
-  - Corpus Christi
-  - Midland
+Notebook 1 loads this file by default so the analysis can be reproduced without requiring an EIA API key. The original API extraction code remains in the notebook for documentation.
 
-## Local Data Policy
+### `demand_hourly.csv`
 
-Raw data files, intermediate exports, and DuckDB database files are not committed to this repository.
+Cleaned hourly ERCOT demand data produced by Notebook 1.
 
-The modeling dataset can be recreated from the notebooks.
+The dataset includes calendar, lag, rolling-demand, and demand-risk features. Notebook 2 loads this file before integrating the weather data.
+
+## Generated Data
+
+Notebook 2 retrieves hourly weather observations from Open-Meteo for six Texas cities and creates the following local DuckDB database:
+
+```text
+ercot_weather.duckdb
