@@ -48,7 +48,7 @@ The notebook also retains the original EIA API extraction code for documentation
 
 - Reads the `demand_weather_model` table from DuckDB.
 - Uses a chronological 2025 holdout for model evaluation.
-- Compares Ridge, Random Forest, HistGradientBoosting, and XGBoost models.
+- Compares Ridge, Random Forest, and HistGradientBoosting models.
 - Evaluates performance across demand and temperature segments.
 - Creates the `forecast_results` and `model_evaluation` outputs used by Tableau.
 
