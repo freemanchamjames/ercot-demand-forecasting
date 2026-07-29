@@ -130,11 +130,11 @@ Demand and temperature thresholds were calculated from the training period to av
 
 | Model | Test MAE | Test RMSE | MAE as % of Mean Demand | RMSE as % of Mean Demand |
 |---|---:|---:|---:|---:|
-| Ridge Regression | 1,113.06 | 1,405.77 | 2.00% | 2.52% |
-| Random Forest | 654.01 | 893.38 | 1.17% | 1.60% |
-| HistGradientBoosting | 469.58 | 625.16 | 0.84% | 1.12% |
+| Ridge Regression | 857.10 | 1,122.20 | 1.54% | 2.01% |
+| Random Forest | 680.68 | 933.92 | 1.22% | 1.68% |
+| HistGradientBoosting | 487.32 | 648.124 | 0.87% | 1.16% |
 
-HistGradientBoosting produced the lowest overall error on the 2025 test set. Its MAE of 469.58 MW and RMSE of 625.16 MW represented approximately 0.84% and 1.12% of mean 2025 demand.
+HistGradientBoosting produced the lowest overall error on the 2025 test set. Its MAE of 487.32 MW and RMSE of 648.24 MW represented approximately 0.87% and 1.16% of mean 2025 demand.
 
 HGB also performed best during normal- and high-demand periods and across the defined temperature segments. These results support the EDA finding that ERCOT demand is influenced by nonlinear relationships and interactions among recent demand, calendar patterns, and weather conditions.
 
