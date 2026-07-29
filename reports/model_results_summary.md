@@ -40,7 +40,7 @@ Demand and temperature segments were defined using thresholds calculated from th
 | Model | Test MAE | Test RMSE | MAE as % of Mean Demand | RMSE as % of Mean Demand |
 |---|---:|---:|---:|---:|
 | Ridge Regression | 857.10 | 1,122.20 | 1.54% | 2.01% |
-| Random Forest | 680.08 | 933.92 | 1.22% | 1.68% |
+| Random Forest | 680.68 | 933.92 | 1.22% | 1.68% |
 | HistGradientBoosting (HGB) | 487.32 | 648.24 | 0.87% | 1.16% |
 
 ## Main Findings
