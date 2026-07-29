@@ -132,7 +132,7 @@ Demand and temperature thresholds were calculated from the training period to av
 |---|---:|---:|---:|---:|
 | Ridge Regression | 857.10 | 1,122.20 | 1.54% | 2.01% |
 | Random Forest | 680.68 | 933.92 | 1.22% | 1.68% |
-| HistGradientBoosting | 487.32 | 648.124 | 0.87% | 1.16% |
+| HistGradientBoosting | 487.32 | 648.24 | 0.87% | 1.16% |
 
 HistGradientBoosting produced the lowest overall error on the 2025 test set. Its MAE of 487.32 MW and RMSE of 648.24 MW represented approximately 0.87% and 1.16% of mean 2025 demand.
 
